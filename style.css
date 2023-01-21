@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #12724c;
+  height: 100vh;
+}
+.img-handler {
+  width: 90px;
+  height: 90px;
+}
+.pop button {
+  background: transparent;
+  border: none;
+  transition: 1s ease-in-out;
+  animation: rotate 1s ease-in;
+  animation-fill-mode: forwards;
+  margin-bottom: 30px;
+}
+.pop {
+  display: none;
+  width: 50%;
+  height: 45vh;
+  top: 20%;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  transition: 1s all ease;
+  gap: 50px;
+  border-radius: 20px;
+  z-index: 1000;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+}
+.game {
+  transition: 1s all ease;
+  width: 30%;
+  height: fit-content;
+  margin: 20px auto;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.trans {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  background-color: #3f3f50;
+  padding: 20px;
+  gap: 10px;
+  transition: 1s all ease;
+}
+#msc,
+.best {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: white;
+}
+.box {
+  color: black;
+  background-color: white;
+  font-size: 3.5rem;
+  width: 100%;
+  height: 12vh;
+  border: #c7c9d3 solid 10px;
+  border-top-color: white;
+  border-left-color: #989aaa;
+  border-right-color: #989aaa;
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.light img {
+  width: 30px;
+  height: 20px;
+  /* background-color: red; */
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.logo > img {
+  width: 60px;
+  height: 30px;
+}
+.inps {
+  margin-top: 40px;
+  height: 400px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 10px;
+}
+.inps button {
+  border-radius: 12px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 1.9rem;
+  outline: none;
+}
+.lose {
+  cursor: none;
+  pointer-events: none;
+  opacity: 0.5;
+}
+h4 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .game {
+    width: 70%;
+  }
+  .pop {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 370px) {
+  .game {
+    width: 96%;
+  }
+  .pop {
+    width: 80%;
+  }
+}
+@keyframes rotate {
+  1% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
