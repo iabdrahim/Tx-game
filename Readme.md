@@ -1,4 +1,4 @@
-<h2>TX Game/h2>
+<h2>TX Game </h2>
   
   
 👉 Live Demo: <a href='https://tx-game.vercel.app/'>Live Demo</a>
